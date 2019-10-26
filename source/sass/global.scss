@@ -1,0 +1,62 @@
+html { /* stylelint-disable-line plugin/selector-bem-pattern */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body { /* stylelint-disable-line plugin/selector-bem-pattern */
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $default-text-color;
+
+  background-color: $default-bg-color;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}
