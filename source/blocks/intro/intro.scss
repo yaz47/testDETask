@@ -12,7 +12,7 @@
     top 146px left calc(50% - 525px) / 124px 124px no-repeat url("../img/cross.svg"),
     bottom -20px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
     bottom -20px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
-    top 0 right calc(100% - 800px) / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
+    top 0 right calc(50% - 400px) / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
     $midnight-blue;
 }
 
@@ -39,7 +39,7 @@
 
 .intro__social-wrapper {
   position: relative;
-  width: calc(100% - 1300px);
+  width: calc(50% - 500px);
   margin-top: auto;
   margin-left: auto;
   padding: 27px 65px 14px 40px;

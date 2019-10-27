@@ -742,7 +742,7 @@ body {
   padding-top: 146px;
   font: normal 200 20px/1.6 "Muli", "Arial", sans-serif;
   color: #ffffff;
-  background: top 146px left calc(50% - 525px)/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right calc(100% - 800px)/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
+  background: top 146px left calc(50% - 525px)/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right calc(50% - 400px)/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
 }
 
 /* line 19, source/blocks/intro/intro.scss */
@@ -770,7 +770,7 @@ body {
 /* line 40, source/blocks/intro/intro.scss */
 .intro__social-wrapper {
   position: relative;
-  width: calc(100% - 1300px);
+  width: calc(50% - 500px);
   margin-top: auto;
   margin-left: auto;
   padding: 27px 65px 14px 40px;
@@ -831,7 +831,7 @@ body {
 /* line 1, source/blocks/about/about.scss */
 .about {
   position: relative;
-  min-height: 935px;
+  min-height: 930px;
   padding: 100px 0 150px;
   background: top 100px left calc(50% - 543px)/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), linear-gradient(to top, #ffffff 150px, #f7f7fc 150px 100%);
 }
@@ -920,4 +920,98 @@ body {
 /* line 70, source/blocks/about/about.scss */
 .about__button {
   margin: 30px 0;
+}
+
+/* line 1, source/blocks/clients/clients.scss */
+.clients {
+  position: relative;
+  min-height: 300px;
+  padding: 10px 0;
+  font: normal 200 20px/1.6 "Muli", "Arial", sans-serif;
+  color: #ffffff;
+  background: top 0 center/1600px 297px no-repeat url("../img/clients-back-desktop@1x.jpg"), #383964;
+}
+
+/* line 14, source/blocks/clients/clients.scss */
+.clients__title {
+  margin: 38px 0 10px;
+  font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 22, source/blocks/clients/clients.scss */
+.clients__list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 27, source/blocks/clients/clients.scss */
+.clients__item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 32, source/blocks/clients/clients.scss */
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 90px;
+}
+
+/* line 4, source/sass/mixins.scss */
+.clients__link:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.clients__link:active {
+  opacity: 0.3;
+}
+
+/* line 42, source/blocks/clients/clients.scss */
+.clients__photo-wrapper {
+  overflow: hidden;
+}
+
+/* line 16, source/sass/mixins.scss */
+.clients__photo-wrapper picture,
+.clients__photo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 45, source/blocks/clients/clients.scss */
+.clients__photo-wrapper--salon {
+  width: 163px;
+  height: 35px;
+}
+
+/* line 50, source/blocks/clients/clients.scss */
+.clients__photo-wrapper--luscious {
+  width: 152px;
+  height: 71px;
+}
+
+/* line 55, source/blocks/clients/clients.scss */
+.clients__photo-wrapper--brillbird {
+  width: 130px;
+  height: 23px;
+}
+
+/* line 60, source/blocks/clients/clients.scss */
+.clients__photo-wrapper--loxa {
+  width: 175px;
+  height: 34px;
+}
+
+/* line 65, source/blocks/clients/clients.scss */
+.clients__photo-wrapper--babaria {
+  width: 110px;
+  height: 32px;
 }
