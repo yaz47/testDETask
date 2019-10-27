@@ -1,2 +1,13 @@
 @import "normalize";
 @import "pixel-glass";
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "global";
+
+// element blocks
+@import "../blocks/social-list/social-list";
+@import "../blocks/button/button";
+
+// structure blocks
+@import "../blocks/intro/intro";

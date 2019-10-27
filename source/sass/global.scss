@@ -10,11 +10,23 @@ html { /* stylelint-disable-line plugin/selector-bem-pattern */
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+button { /* stylelint-disable-line plugin/selector-bem-pattern */
+  cursor: pointer;
+}
+
+ul { /* stylelint-disable-line plugin/selector-bem-pattern */
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 body { /* stylelint-disable-line plugin/selector-bem-pattern */
@@ -56,7 +68,15 @@ body { /* stylelint-disable-line plugin/selector-bem-pattern */
   }
 
   @media (min-width: $desktop-width) {
-    width: 1320px;
+    width: 1170px;
     margin: 0 auto;
   }
+}
+
+.test {
+  z-index: 1000;
+  position: relative;
+  height: 146px;
+  background-color: #ffffff;
+  margin-bottom: -146px;
 }

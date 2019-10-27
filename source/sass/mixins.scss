@@ -1,0 +1,10 @@
+@mixin defaultHoverEffect {
+
+  &:hover { /* stylelint-disable-line plugin/selector-bem-pattern */
+    opacity: 0.7;
+  }
+
+  &:active { /* stylelint-disable-line plugin/selector-bem-pattern */
+    opacity: 0.3;
+  }
+}

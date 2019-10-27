@@ -1,0 +1,12 @@
+.button {
+  @include defaultHoverEffect();
+
+  display: inline-block;
+  padding: 18px 50px;
+
+  font: $text-default-400-16;
+  color: $midnight-blue;
+
+  border-radius: 30px;
+  background-color: $gold;
+}
