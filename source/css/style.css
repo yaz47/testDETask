@@ -517,6 +517,7 @@ BODY[data-filter="invert"] {
   pointer-events: none;
 }
 
+/* stylelint-disable plugin/selector-bem-pattern */
 @font-face {
   font-family: "Trirong";
   /* stylelint-disable-line font-family-name-quotes */
@@ -571,48 +572,45 @@ BODY[data-filter="invert"] {
   src: local("Muli SemiBold"), local("Muli-SemiBold"), url("../fonts/muli-semibold.woff2") format("woff2"), url("../fonts/muli-semibold.woff") format("woff");
 }
 
-/* line 1, source/sass/global.scss */
+/* stylelint-disable plugin/selector-bem-pattern */
+/* line 2, source/sass/global.scss */
 html {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   box-sizing: border-box;
 }
 
-/* line 5, source/sass/global.scss */
+/* line 6, source/sass/global.scss */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/* line 11, source/sass/global.scss */
+/* line 12, source/sass/global.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 16, source/sass/global.scss */
+/* line 17, source/sass/global.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 21, source/sass/global.scss */
+/* line 22, source/sass/global.scss */
 button {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   cursor: pointer;
 }
 
-/* line 25, source/sass/global.scss */
+/* line 26, source/sass/global.scss */
 ul {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 32, source/sass/global.scss */
+/* line 33, source/sass/global.scss */
 body {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -624,7 +622,7 @@ body {
   background-color: #ffffff;
 }
 
-/* line 46, source/sass/global.scss */
+/* line 47, source/sass/global.scss */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -638,31 +636,31 @@ body {
   overflow: hidden;
 }
 
-/* line 62, source/sass/global.scss */
+/* line 63, source/sass/global.scss */
 .container {
   position: relative;
   margin: 0 25px;
 }
 
 @media (min-width: 768px) {
-  /* line 62, source/sass/global.scss */
+  /* line 63, source/sass/global.scss */
   .container {
     margin: 0 40px;
   }
 }
 
-@media (min-width: 1440px) {
-  /* line 62, source/sass/global.scss */
+@media (min-width: 1600px) {
+  /* line 63, source/sass/global.scss */
   .container {
     width: 1170px;
     margin: 0 auto;
   }
 }
 
-/* line 76, source/sass/global.scss */
+/* line 77, source/sass/global.scss */
 .test {
-  z-index: 1000;
   position: relative;
+  z-index: 1000;
   height: 146px;
   background-color: #ffffff;
   margin-bottom: -146px;
@@ -689,15 +687,13 @@ body {
   height: 30px;
 }
 
-/* line 3, source/sass/mixins.scss */
+/* line 4, source/sass/mixins.scss */
 .social-list__link:hover {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.7;
 }
 
-/* line 7, source/sass/mixins.scss */
+/* line 8, source/sass/mixins.scss */
 .social-list__link:active {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.3;
 }
 
@@ -716,16 +712,25 @@ body {
   background-color: #f2c200;
 }
 
-/* line 3, source/sass/mixins.scss */
+/* line 4, source/sass/mixins.scss */
 .button:hover {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.7;
 }
 
-/* line 7, source/sass/mixins.scss */
+/* line 8, source/sass/mixins.scss */
 .button:active {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.3;
+}
+
+/* line 13, source/blocks/button/button.scss */
+.button--uppercase {
+  text-transform: uppercase;
+}
+
+/* line 17, source/blocks/button/button.scss */
+.button--blue {
+  color: #ffffff;
+  background-color: #2b2d5c;
 }
 
 /* line 1, source/blocks/intro/intro.scss */
@@ -737,7 +742,7 @@ body {
   padding-top: 146px;
   font: normal 200 20px/1.6 "Muli", "Arial", sans-serif;
   color: #ffffff;
-  background: bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right calc(100% - 800px)/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), top 146px left calc(100% - 1263px)/124px 124px no-repeat url("../img/cross.svg"), #2b2d5c;
+  background: top 146px left calc(50% - 525px)/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right calc(100% - 800px)/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
 }
 
 /* line 19, source/blocks/intro/intro.scss */
@@ -768,7 +773,7 @@ body {
   width: calc(100% - 1300px);
   margin-top: auto;
   margin-left: auto;
-  padding: 27px 85px 14px 40px;
+  padding: 27px 65px 14px 40px;
   border-top: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
 }
@@ -813,14 +818,106 @@ body {
   transform: translateX(-50%);
 }
 
-/* line 3, source/sass/mixins.scss */
+/* line 4, source/sass/mixins.scss */
 .intro__scroll:hover {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.7;
 }
 
-/* line 7, source/sass/mixins.scss */
+/* line 8, source/sass/mixins.scss */
 .intro__scroll:active {
-  /* stylelint-disable-line plugin/selector-bem-pattern */
   opacity: 0.3;
+}
+
+/* line 1, source/blocks/about/about.scss */
+.about {
+  position: relative;
+  min-height: 935px;
+  padding: 100px 0 150px;
+  background: top 100px left calc(50% - 543px)/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), linear-gradient(to top, #ffffff 150px, #f7f7fc 150px 100%);
+}
+
+/* line 11, source/blocks/about/about.scss */
+.about__container {
+  padding-left: 435px;
+}
+
+/* line 15, source/blocks/about/about.scss */
+.about__title {
+  margin: 43px 0 5px;
+  font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
+  color: #2b2d5c;
+}
+
+/* line 22, source/blocks/about/about.scss */
+.about__text {
+  margin: 5px 0;
+  padding: 0;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #595666;
+}
+
+/* line 30, source/blocks/about/about.scss */
+.about__section-title {
+  margin: 25px 0 10px;
+  font: normal 300 26px/1.46 "Trirong", "Times New Roman", serif;
+  color: #595666;
+}
+
+/* line 37, source/blocks/about/about.scss */
+.about__activities-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -185px;
+}
+
+/* line 43, source/blocks/about/about.scss */
+.about__activities-item {
+  width: 135px;
+  margin-right: 168px;
+  margin-bottom: 30px;
+}
+
+/* line 49, source/blocks/about/about.scss */
+.about__activities-link {
+  display: block;
+}
+
+/* line 4, source/sass/mixins.scss */
+.about__activities-link:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.about__activities-link:active {
+  opacity: 0.3;
+}
+
+/* line 55, source/blocks/about/about.scss */
+.about__activities-title {
+  margin: 7px 0 10px;
+  font: normal 600 16px/2.3 "Muli", "Arial", sans-serif;
+  color: #595666;
+  text-transform: uppercase;
+}
+
+/* line 63, source/blocks/about/about.scss */
+.about__activities-photo-wrapper {
+  overflow: hidden;
+  width: 130px;
+  height: 120px;
+}
+
+/* line 16, source/sass/mixins.scss */
+.about__activities-photo-wrapper picture,
+.about__activities-photo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 70, source/blocks/about/about.scss */
+.about__button {
+  margin: 30px 0;
 }

@@ -1,4 +1,5 @@
-html { /* stylelint-disable-line plugin/selector-bem-pattern */
+/* stylelint-disable plugin/selector-bem-pattern */
+html {
   box-sizing: border-box;
 }
 
@@ -18,18 +19,18 @@ img {
   height: auto;
 }
 
-button { /* stylelint-disable-line plugin/selector-bem-pattern */
+button {
   cursor: pointer;
 }
 
-ul { /* stylelint-disable-line plugin/selector-bem-pattern */
+ul {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-body { /* stylelint-disable-line plugin/selector-bem-pattern */
+body {
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -74,8 +75,8 @@ body { /* stylelint-disable-line plugin/selector-bem-pattern */
 }
 
 .test {
-  z-index: 1000;
   position: relative;
+  z-index: 1000;
   height: 146px;
   background-color: #ffffff;
   margin-bottom: -146px;

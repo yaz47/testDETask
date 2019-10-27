@@ -9,4 +9,14 @@
 
   border-radius: 30px;
   background-color: $gold;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--blue {
+    color: $white;
+
+    background-color: $midnight-blue;
+  }
 }

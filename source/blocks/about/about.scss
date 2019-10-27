@@ -1,0 +1,72 @@
+.about {
+  position: relative;
+  min-height: 935px;
+  padding: 100px 0 150px;
+
+  background:
+    top 100px left calc(50% - 543px) / 514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"),
+    linear-gradient(to top, $white 150px, $grayish-blue 150px 100%);
+}
+
+.about__container {
+  padding-left: 435px;
+}
+
+.about__title {
+  margin: 43px 0 5px;
+
+  font: $text-title-300-40;
+  color: $midnight-blue;
+}
+
+.about__text {
+  margin: 5px 0;
+  padding: 0;
+
+  font: $text-default-300-16;
+  color: $magenta-blue;
+}
+
+.about__section-title {
+  margin: 25px 0 10px;
+
+  font: $text-title-300-26;
+  color: $magenta-blue;
+}
+
+.about__activities-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -185px;
+}
+
+.about__activities-item {
+  width: 135px;
+  margin-right: 168px;
+  margin-bottom: 30px;
+}
+
+.about__activities-link {
+  @include defaultHoverEffect();
+
+  display: block;
+}
+
+.about__activities-title {
+  margin: 7px 0 10px;
+
+  font: $text-default-600-16;
+  color: $magenta-blue;
+  text-transform: uppercase;
+}
+
+.about__activities-photo-wrapper {
+  @include imgContainer();
+
+  width: 130px;
+  height: 120px;
+}
+
+.about__button {
+  margin: 30px 0;
+}

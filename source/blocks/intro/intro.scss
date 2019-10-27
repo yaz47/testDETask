@@ -9,10 +9,10 @@
   color: $white;
 
   background:
+    top 146px left calc(50% - 525px) / 124px 124px no-repeat url("../img/cross.svg"),
     bottom -20px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
     bottom -20px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
     top 0 right calc(100% - 800px) / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
-    top 146px left calc(100% - 1263px) / 124px 124px no-repeat url("../img/cross.svg"),
     $midnight-blue;
 }
 
@@ -42,7 +42,7 @@
   width: calc(100% - 1300px);
   margin-top: auto;
   margin-left: auto;
-  padding: 27px 85px 14px 40px;
+  padding: 27px 65px 14px 40px;
 
   border-top: 1px solid $white;
   border-left: 1px solid $white;
