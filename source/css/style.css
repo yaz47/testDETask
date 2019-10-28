@@ -618,8 +618,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
-  color: #2b2d5c;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #2b2d5c;
 }
 
 /* line 47, source/sass/global.scss */
@@ -657,13 +657,64 @@ body {
   }
 }
 
-/* line 77, source/sass/global.scss */
-.test {
-  position: relative;
-  z-index: 1000;
-  height: 146px;
-  background-color: #ffffff;
-  margin-bottom: -146px;
+/* line 1, source/blocks/button/button.scss */
+.button {
+  display: inline-block;
+  padding: 18px 50px;
+  font: normal 400 16px/1.5 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+  border-radius: 30px;
+  background-color: #f2c200;
+}
+
+/* line 4, source/sass/mixins.scss */
+.button:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.button:active {
+  opacity: 0.3;
+}
+
+/* line 13, source/blocks/button/button.scss */
+.button--uppercase {
+  text-transform: uppercase;
+}
+
+/* line 17, source/blocks/button/button.scss */
+.button--blue {
+  color: #ffffff;
+  background-color: #2b2d5c;
+}
+
+/* line 1, source/blocks/site-logo/site-logo.scss */
+.site-logo {
+  overflow: hidden;
+  display: block;
+  width: 196px;
+  height: 26px;
+  background-color: #2b2d5c;
+}
+
+/* line 16, source/sass/mixins.scss */
+.site-logo picture,
+.site-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 4, source/sass/mixins.scss */
+.site-logo:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.site-logo:active {
+  opacity: 0.3;
 }
 
 /* line 1, source/blocks/social-list/social-list.scss */
@@ -702,35 +753,70 @@ body {
   fill: #ffffff;
 }
 
-/* line 1, source/blocks/button/button.scss */
-.button {
-  display: inline-block;
-  padding: 18px 50px;
-  font: normal 400 16px/1.5 "Muli", "Arial", sans-serif;
-  color: #2b2d5c;
-  border-radius: 30px;
-  background-color: #f2c200;
+/* line 1, source/blocks/header/header.scss */
+.header {
+  position: relative;
+  z-index: 100;
+  min-height: 146px;
+  margin-bottom: -146px;
+  padding-top: 40px;
+  font: normal 600 14px/2.3 "Muli", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+/* line 12, source/blocks/header/header.scss */
+.header__container {
+  display: flex;
+}
+
+/* line 16, source/blocks/header/header.scss */
+.header__site-logo {
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+/* line 21, source/blocks/header/header.scss */
+.header__navigation {
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* line 26, source/blocks/header/header.scss */
+.header__navigation-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 600px;
+  margin-right: -13px;
+}
+
+/* line 34, source/blocks/header/header.scss */
+.header__navigation-item {
+  margin-right: 13px;
+  margin-bottom: 13px;
+}
+
+/* line 39, source/blocks/header/header.scss */
+.header__navigation-link {
+  display: block;
+  padding: 1px 7px;
+  font: normal 600 14px/2.3 "Muli", "Arial", sans-serif;
+  color: #ffffff;
 }
 
 /* line 4, source/sass/mixins.scss */
-.button:hover {
+.header__navigation-link:hover {
   opacity: 0.7;
 }
 
 /* line 8, source/sass/mixins.scss */
-.button:active {
+.header__navigation-link:active {
   opacity: 0.3;
 }
 
-/* line 13, source/blocks/button/button.scss */
-.button--uppercase {
-  text-transform: uppercase;
-}
-
-/* line 17, source/blocks/button/button.scss */
-.button--blue {
-  color: #ffffff;
-  background-color: #2b2d5c;
+/* line 48, source/blocks/header/header.scss */
+.header__navigation-link--current {
+  border-bottom: 1px solid #ffcc00;
 }
 
 /* line 1, source/blocks/intro/intro.scss */

@@ -1,0 +1,10 @@
+.site-logo {
+  @include imgContainer();
+  @include defaultHoverEffect();
+
+  display: block;
+  width: 196px;
+  height: 26px;
+
+  background-color: $midnight-blue;
+}

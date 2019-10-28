@@ -6,10 +6,12 @@
 @import "global";
 
 // element blocks
-@import "../blocks/social-list/social-list";
 @import "../blocks/button/button";
+@import "../blocks/site-logo/site-logo";
+@import "../blocks/social-list/social-list";
 
 // structure blocks
+@import "../blocks/header/header";
 @import "../blocks/intro/intro";
 @import "../blocks/about/about";
 @import "../blocks/clients/clients";
