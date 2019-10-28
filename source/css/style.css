@@ -649,6 +649,13 @@ body {
   }
 }
 
+@media (min-width: 950px) {
+  /* line 63, source/sass/global.scss */
+  .container {
+    margin: 0 80px;
+  }
+}
+
 @media (min-width: 1600px) {
   /* line 63, source/sass/global.scss */
   .container {
@@ -686,6 +693,15 @@ body {
 .button--blue {
   color: #ffffff;
   background-color: #2b2d5c;
+}
+
+@media (max-width: 767px) {
+  /* line 1, source/blocks/button/button.scss */
+  .button {
+    padding: 12px 35px;
+    font: normal 400 10px/1.5 "Muli", "Arial", sans-serif;
+    border-radius: 20px;
+  }
 }
 
 /* line 1, source/blocks/site-logo/site-logo.scss */
@@ -772,31 +788,44 @@ body {
 /* line 16, source/blocks/header/header.scss */
 .header__site-logo {
   margin-top: 25px;
-  margin-right: 25px;
 }
 
-/* line 21, source/blocks/header/header.scss */
+/* line 20, source/blocks/header/header.scss */
 .header__navigation {
   margin-top: 20px;
   margin-left: auto;
 }
 
-/* line 26, source/blocks/header/header.scss */
+/* line 25, source/blocks/header/header.scss */
 .header__navigation-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  width: 600px;
+  width: 550px;
   margin-right: -13px;
 }
 
-/* line 34, source/blocks/header/header.scss */
+@media (max-width: 1599px) {
+  /* line 25, source/blocks/header/header.scss */
+  .header__navigation-list {
+    width: 500px;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 25, source/blocks/header/header.scss */
+  .header__navigation-list {
+    width: 400px;
+  }
+}
+
+/* line 41, source/blocks/header/header.scss */
 .header__navigation-item {
   margin-right: 13px;
   margin-bottom: 13px;
 }
 
-/* line 39, source/blocks/header/header.scss */
+/* line 46, source/blocks/header/header.scss */
 .header__navigation-link {
   display: block;
   padding: 1px 7px;
@@ -814,7 +843,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 48, source/blocks/header/header.scss */
+/* line 55, source/blocks/header/header.scss */
 .header__navigation-link--current {
   border-bottom: 1px solid #ffcc00;
 }
@@ -831,7 +860,28 @@ body {
   background: top 146px left calc(50% - 525px)/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right calc(50% - 400px)/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
 }
 
-/* line 19, source/blocks/intro/intro.scss */
+@media (max-width: 1599px) {
+  /* line 1, source/blocks/intro/intro.scss */
+  .intro {
+    background: top 146px left 80px/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right -130px/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 1, source/blocks/intro/intro.scss */
+  .intro {
+    background: top 146px left 40px/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right -170px/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1, source/blocks/intro/intro.scss */
+  .intro {
+    background: top 146px left 25px/75px 75px no-repeat url("../img/cross.svg"), bottom -78px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -78px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right -135px/400px 450px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
+  }
+}
+
+/* line 46, source/blocks/intro/intro.scss */
 .intro__title {
   width: 600px;
   margin: 206px 0 10px;
@@ -839,7 +889,17 @@ body {
   color: #ffffff;
 }
 
-/* line 27, source/blocks/intro/intro.scss */
+@media (max-width: 767px) {
+  /* line 46, source/blocks/intro/intro.scss */
+  .intro__title {
+    width: auto;
+    max-width: 400px;
+    margin-top: 100px;
+    font: normal 300 36px/1.2 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 62, source/blocks/intro/intro.scss */
 .intro__text {
   width: 600px;
   margin: 15px 0;
@@ -848,12 +908,27 @@ body {
   color: #ffffff;
 }
 
-/* line 36, source/blocks/intro/intro.scss */
+@media (max-width: 767px) {
+  /* line 62, source/blocks/intro/intro.scss */
+  .intro__text {
+    width: auto;
+    font: normal 200 12px/1.6 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 77, source/blocks/intro/intro.scss */
 .intro__button {
   margin: 30px 0;
 }
 
-/* line 40, source/blocks/intro/intro.scss */
+@media (max-width: 767px) {
+  /* line 77, source/blocks/intro/intro.scss */
+  .intro__button {
+    margin: 15px 0;
+  }
+}
+
+/* line 85, source/blocks/intro/intro.scss */
 .intro__social-wrapper {
   position: relative;
   width: calc(50% - 500px);
@@ -864,7 +939,7 @@ body {
   border-left: 1px solid #ffffff;
 }
 
-/* line 50, source/blocks/intro/intro.scss */
+/* line 95, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before, .intro__social-wrapper::after {
   content: "";
   position: absolute;
@@ -874,20 +949,50 @@ body {
   border-top: 1px solid #ffffff;
 }
 
-/* line 61, source/blocks/intro/intro.scss */
+/* line 106, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before {
   width: 85px;
   transform: translateX(-100%);
 }
 
-/* line 67, source/blocks/intro/intro.scss */
+/* line 112, source/blocks/intro/intro.scss */
 .intro__social-wrapper::after {
   width: 95px;
   transform-origin: top left;
   transform: rotate(-90deg);
 }
 
-/* line 75, source/blocks/intro/intro.scss */
+@media (max-width: 1599px) {
+  /* line 85, source/blocks/intro/intro.scss */
+  .intro__social-wrapper {
+    width: 300px;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 85, source/blocks/intro/intro.scss */
+  .intro__social-wrapper {
+    width: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 85, source/blocks/intro/intro.scss */
+  .intro__social-wrapper {
+    width: 70px;
+    padding: 15px 45px 14px 20px;
+  }
+  /* line 131, source/blocks/intro/intro.scss */
+  .intro__social-wrapper::before {
+    width: 50px;
+  }
+  /* line 135, source/blocks/intro/intro.scss */
+  .intro__social-wrapper::after {
+    width: 57px;
+  }
+}
+
+/* line 141, source/blocks/intro/intro.scss */
 .intro__scroll {
   position: absolute;
   bottom: 50px;
@@ -912,6 +1017,13 @@ body {
 /* line 8, source/sass/mixins.scss */
 .intro__scroll:active {
   opacity: 0.3;
+}
+
+@media (max-width: 767px) {
+  /* line 141, source/blocks/intro/intro.scss */
+  .intro__scroll {
+    bottom: 25px;
+  }
 }
 
 /* line 1, source/blocks/about/about.scss */

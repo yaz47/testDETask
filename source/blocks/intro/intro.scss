@@ -14,6 +14,33 @@
     bottom -20px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
     top 0 right calc(50% - 400px) / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
     $midnight-blue;
+
+  @media (max-width: $only-half-full-hd) {
+    background:
+      top 146px left 80px / 124px 124px no-repeat url("../img/cross.svg"),
+      bottom -20px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
+      bottom -20px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
+      top 0 right -130px / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
+      $midnight-blue;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    background:
+      top 146px left 40px / 124px 124px no-repeat url("../img/cross.svg"),
+      bottom -20px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
+      bottom -20px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
+      top 0 right -170px / 800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"),
+      $midnight-blue;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    background:
+      top 146px left 25px / 75px 75px no-repeat url("../img/cross.svg"),
+      bottom -78px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
+      bottom -78px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
+      top 0 right -135px / 400px 450px no-repeat url("../img/intro-back-desktop@1x.jpg"),
+      $midnight-blue;
+  }
 }
 
 .intro__title {
@@ -22,6 +49,14 @@
 
   font: $text-title-300-60;
   color: $white;
+
+  @media (max-width: $only-mobile-width) {
+    width: auto;
+    max-width: 400px;
+    margin-top: 100px;
+
+    font: $text-title-300-36;
+  }
 }
 
 .intro__text {
@@ -31,10 +66,20 @@
 
   font: $text-default-200-20;
   color: $white;
+
+  @media (max-width: $only-mobile-width) {
+    width: auto;
+
+    font: $text-default-200-12;
+  }
 }
 
 .intro__button {
   margin: 30px 0;
+
+  @media (max-width: $only-mobile-width) {
+    margin: 15px 0;
+  }
 }
 
 .intro__social-wrapper {
@@ -70,6 +115,27 @@
     transform-origin: top left;
     transform: rotate(-90deg);
   }
+
+  @media (max-width: $only-half-full-hd) {
+    width: 300px;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    width: 110px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: 70px;
+    padding: 15px 45px 14px 20px;
+
+    &::before {
+      width: 50px;
+    }
+
+    &::after {
+      width: 57px;
+    }
+  }
 }
 
 .intro__scroll {
@@ -90,4 +156,8 @@
   background: transparent;
 
   transform: translateX(-50%);
+
+  @media (max-width: $only-mobile-width) {
+    bottom: 25px;
+  }
 }

@@ -15,7 +15,6 @@
 
 .header__site-logo {
   margin-top: 25px;
-  margin-right: 25px;
 }
 
 .header__navigation {
@@ -27,8 +26,16 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  width: 600px;
+  width: 550px;
   margin-right: -13px;
+
+  @media (max-width: $only-half-full-hd) {
+    width: 500px;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    width: 400px;
+  }
 }
 
 .header__navigation-item {

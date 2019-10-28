@@ -19,4 +19,12 @@
 
     background-color: $midnight-blue;
   }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 12px 35px;
+
+    font: $text-default-400-10;
+
+    border-radius: 20px;
+  }
 }

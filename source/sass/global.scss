@@ -68,6 +68,10 @@ body {
     margin: 0 40px;
   }
 
+  @media (min-width: $half-full-hd) {
+    margin: 0 80px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1170px;
     margin: 0 auto;
