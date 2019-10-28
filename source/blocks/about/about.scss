@@ -5,7 +5,8 @@
 
   background:
     top 100px left calc(50% - 543px) / 514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"),
-    linear-gradient(to top, $white 150px, $grayish-blue 150px 100%);
+    bottom 0 left 0 / 150px 150px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="),
+    $grayish-blue;
 }
 
 .about__container {

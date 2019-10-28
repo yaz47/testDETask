@@ -3,6 +3,7 @@
   "extends": ["airbnb-base/legacy"],
   "rules": {
     "strict": "off",
-    "indent": "off"
+    "indent": "off",
+    "func-names": "off"
   }
 }

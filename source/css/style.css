@@ -738,7 +738,7 @@ body {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  min-height: 900px;
+  height: 100vh;
   padding-top: 146px;
   font: normal 200 20px/1.6 "Muli", "Arial", sans-serif;
   color: #ffffff;
@@ -833,22 +833,22 @@ body {
   position: relative;
   min-height: 930px;
   padding: 100px 0 150px;
-  background: top 100px left calc(50% - 543px)/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), linear-gradient(to top, #ffffff 150px, #f7f7fc 150px 100%);
+  background: top 100px left calc(50% - 543px)/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), bottom 0 left 0/150px 150px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
 }
 
-/* line 11, source/blocks/about/about.scss */
+/* line 12, source/blocks/about/about.scss */
 .about__container {
   padding-left: 435px;
 }
 
-/* line 15, source/blocks/about/about.scss */
+/* line 16, source/blocks/about/about.scss */
 .about__title {
   margin: 43px 0 5px;
   font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
   color: #2b2d5c;
 }
 
-/* line 22, source/blocks/about/about.scss */
+/* line 23, source/blocks/about/about.scss */
 .about__text {
   margin: 5px 0;
   padding: 0;
@@ -856,28 +856,28 @@ body {
   color: #595666;
 }
 
-/* line 30, source/blocks/about/about.scss */
+/* line 31, source/blocks/about/about.scss */
 .about__section-title {
   margin: 25px 0 10px;
   font: normal 300 26px/1.46 "Trirong", "Times New Roman", serif;
   color: #595666;
 }
 
-/* line 37, source/blocks/about/about.scss */
+/* line 38, source/blocks/about/about.scss */
 .about__activities-list {
   display: flex;
   flex-flow: row wrap;
   margin-right: -185px;
 }
 
-/* line 43, source/blocks/about/about.scss */
+/* line 44, source/blocks/about/about.scss */
 .about__activities-item {
   width: 135px;
   margin-right: 168px;
   margin-bottom: 30px;
 }
 
-/* line 49, source/blocks/about/about.scss */
+/* line 50, source/blocks/about/about.scss */
 .about__activities-link {
   display: block;
 }
@@ -892,7 +892,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 55, source/blocks/about/about.scss */
+/* line 56, source/blocks/about/about.scss */
 .about__activities-title {
   margin: 7px 0 10px;
   font: normal 600 16px/2.3 "Muli", "Arial", sans-serif;
@@ -900,7 +900,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 63, source/blocks/about/about.scss */
+/* line 64, source/blocks/about/about.scss */
 .about__activities-photo-wrapper {
   overflow: hidden;
   width: 130px;
@@ -917,7 +917,7 @@ body {
   padding: 0;
 }
 
-/* line 70, source/blocks/about/about.scss */
+/* line 71, source/blocks/about/about.scss */
 .about__button {
   margin: 30px 0;
 }
