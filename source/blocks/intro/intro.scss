@@ -43,6 +43,15 @@
   }
 }
 
+.intro__container {
+  flex-grow: 1;
+  min-height: calc(100vh - 146px - 85px);
+
+  @media (max-width: $only-tablet-width) {
+    min-height: calc(100vh - 146px - 214px);
+  }
+}
+
 .intro__title {
   width: 600px;
   margin: 206px 0 10px;
@@ -84,8 +93,8 @@
 
 .intro__social-wrapper {
   position: relative;
+  flex-shrink: 0;
   width: calc(50% - 500px);
-  margin-top: auto;
   margin-left: auto;
   padding: 27px 65px 14px 40px;
 

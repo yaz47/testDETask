@@ -883,6 +883,19 @@ body {
 }
 
 /* line 46, source/blocks/intro/intro.scss */
+.intro__container {
+  flex-grow: 1;
+  min-height: calc(100vh - 146px - 85px);
+}
+
+@media (max-width: 949px) {
+  /* line 46, source/blocks/intro/intro.scss */
+  .intro__container {
+    min-height: calc(100vh - 146px - 214px);
+  }
+}
+
+/* line 55, source/blocks/intro/intro.scss */
 .intro__title {
   width: 600px;
   margin: 206px 0 10px;
@@ -891,7 +904,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 46, source/blocks/intro/intro.scss */
+  /* line 55, source/blocks/intro/intro.scss */
   .intro__title {
     width: auto;
     max-width: 400px;
@@ -900,7 +913,7 @@ body {
   }
 }
 
-/* line 62, source/blocks/intro/intro.scss */
+/* line 71, source/blocks/intro/intro.scss */
 .intro__text {
   width: 600px;
   margin: 15px 0;
@@ -910,37 +923,37 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 62, source/blocks/intro/intro.scss */
+  /* line 71, source/blocks/intro/intro.scss */
   .intro__text {
     width: auto;
     font: normal 200 14px/2 "Muli", "Arial", sans-serif;
   }
 }
 
-/* line 77, source/blocks/intro/intro.scss */
+/* line 86, source/blocks/intro/intro.scss */
 .intro__button {
   margin: 30px 0;
 }
 
 @media (max-width: 767px) {
-  /* line 77, source/blocks/intro/intro.scss */
+  /* line 86, source/blocks/intro/intro.scss */
   .intro__button {
     margin: 15px 0;
   }
 }
 
-/* line 85, source/blocks/intro/intro.scss */
+/* line 94, source/blocks/intro/intro.scss */
 .intro__social-wrapper {
   position: relative;
+  flex-shrink: 0;
   width: calc(50% - 500px);
-  margin-top: auto;
   margin-left: auto;
   padding: 27px 65px 14px 40px;
   border-top: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
 }
 
-/* line 95, source/blocks/intro/intro.scss */
+/* line 104, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before, .intro__social-wrapper::after {
   content: "";
   position: absolute;
@@ -950,13 +963,13 @@ body {
   border-top: 1px solid #ffffff;
 }
 
-/* line 106, source/blocks/intro/intro.scss */
+/* line 115, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before {
   width: 85px;
   transform: translateX(-100%);
 }
 
-/* line 112, source/blocks/intro/intro.scss */
+/* line 121, source/blocks/intro/intro.scss */
 .intro__social-wrapper::after {
   width: 95px;
   transform-origin: top left;
@@ -964,36 +977,36 @@ body {
 }
 
 @media (max-width: 1599px) {
-  /* line 85, source/blocks/intro/intro.scss */
+  /* line 94, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 300px;
   }
 }
 
 @media (max-width: 949px) {
-  /* line 85, source/blocks/intro/intro.scss */
+  /* line 94, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 110px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 85, source/blocks/intro/intro.scss */
+  /* line 94, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 70px;
     padding: 15px 45px 14px 20px;
   }
-  /* line 131, source/blocks/intro/intro.scss */
+  /* line 140, source/blocks/intro/intro.scss */
   .intro__social-wrapper::before {
     width: 50px;
   }
-  /* line 135, source/blocks/intro/intro.scss */
+  /* line 144, source/blocks/intro/intro.scss */
   .intro__social-wrapper::after {
     width: 57px;
   }
 }
 
-/* line 141, source/blocks/intro/intro.scss */
+/* line 150, source/blocks/intro/intro.scss */
 .intro__scroll {
   position: absolute;
   bottom: 50px;
@@ -1021,7 +1034,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 141, source/blocks/intro/intro.scss */
+  /* line 150, source/blocks/intro/intro.scss */
   .intro__scroll {
     bottom: 25px;
   }
