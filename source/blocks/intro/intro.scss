@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 146px;
 
   font: $text-default-200-20;
@@ -70,7 +70,7 @@
   @media (max-width: $only-mobile-width) {
     width: auto;
 
-    font: $text-default-200-12;
+    font: $text-default-200-14;
   }
 }
 

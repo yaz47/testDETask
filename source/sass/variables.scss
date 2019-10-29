@@ -1,8 +1,10 @@
 $tablet-width: 768px;
 $half-full-hd: 950px;
+$about-breakpoint: 1250px;
 $desktop-width: 1600px;
 $only-mobile-width: 767px;
 $only-tablet-width: 949px;
+$only-about-breakpoint: 1249px;
 $only-half-full-hd: 1599px;
 
 $retina-dpi: 144dpi;
@@ -27,42 +29,42 @@ $default-font: "Muli", "Arial", sans-serif;
 $title-font: "Trirong", "Times New Roman", serif;
 
 $text-default-600-20: normal 600 20px/1.5 $default-font;
-$text-default-600-12: normal 600 12px/1.5 $default-font;
+$text-default-600-14: normal 600 14px/1.5 $default-font;
 
 
 $text-default-600-16: normal 600 16px/2.3 $default-font;
 $text-default-600-14: normal 600 14px/2.3 $default-font;
-$text-default-600-10: normal 600 10px/2.3 $default-font;
+$text-default-600-13: normal 600 13px/2.3 $default-font;
 
 
 $text-default-400-16: normal 400 16px/1.5 $default-font;
-$text-default-400-10: normal 400 10px/1.5 $default-font;
+$text-default-400-13: normal 400 13px/1.5 $default-font;
 
 
 $text-default-300-24: normal 300 24px/2 $default-font;
-$text-default-300-16: normal 300 16px/2 $default-font;
+$text-default-300-18: normal 300 18px/2 $default-font;
 
 $text-default-300-20: normal 300 20px/1.7 $default-font;
-$text-default-300-12: normal 300 12px/1.7 $default-font;
+$text-default-300-14: normal 300 14px/1.7 $default-font;
 
 
 $text-default-300-16: normal 300 16px/1.75 $default-font;
-$text-default-300-10: normal 300 10px/1.75 $default-font;
+$text-default-300-13: normal 300 13px/1.75 $default-font;
 
 
 $text-default-300-16-slim: normal 300 16px/1.2 $default-font;
-$text-default-300-10-slim: normal 300 10px/1.2 $default-font;
+$text-default-300-13-slim: normal 300 13px/1.2 $default-font;
 
 
 $text-default-300-15: normal 300 15px/1.75 $default-font;
 $text-default-300-14: normal 300 14px/1.6 $default-font;
-$text-default-300-10: normal 300 10px/1.6 $default-font;
+$text-default-300-13: normal 300 13px/1.6 $default-font;
 
 $text-default-200-20: normal 200 20px/1.6 $default-font;
-$text-default-200-12: normal 200 12px/1.6 $default-font;
+$text-default-200-14: normal 200 14px/1.6 $default-font;
 
 $text-default-200-14: normal 200 14px/2 $default-font;
-$text-default-200-10: normal 200 10px/2 $default-font;
+$text-default-200-13: normal 200 13px/2 $default-font;
 
 $text-title-400-40: normal 400 40px/1.9 $title-font;
 $text-title-400-24: normal 400 24px/1.9 $title-font;
@@ -74,4 +76,4 @@ $text-title-300-40: normal 300 40px/1.9 $title-font;
 $text-title-300-24: normal 300 24px/1.9 $title-font;
 
 $text-title-300-26: normal 300 26px/1.46 $title-font;
-$text-title-300-16: normal 300 16px/1.46 $title-font;
+$text-title-300-18: normal 300 18px/1.46 $title-font;

@@ -699,7 +699,7 @@ body {
   /* line 1, source/blocks/button/button.scss */
   .button {
     padding: 12px 35px;
-    font: normal 400 10px/1.5 "Muli", "Arial", sans-serif;
+    font: normal 400 13px/1.5 "Muli", "Arial", sans-serif;
     border-radius: 20px;
   }
 }
@@ -778,25 +778,26 @@ body {
   padding-top: 40px;
   font: normal 600 14px/2.3 "Muli", "Arial", sans-serif;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
-/* line 12, source/blocks/header/header.scss */
+/* line 14, source/blocks/header/header.scss */
 .header__container {
   display: flex;
 }
 
-/* line 16, source/blocks/header/header.scss */
+/* line 18, source/blocks/header/header.scss */
 .header__site-logo {
   margin-top: 25px;
 }
 
-/* line 20, source/blocks/header/header.scss */
+/* line 22, source/blocks/header/header.scss */
 .header__navigation {
   margin-top: 20px;
   margin-left: auto;
 }
 
-/* line 25, source/blocks/header/header.scss */
+/* line 27, source/blocks/header/header.scss */
 .header__navigation-list {
   display: flex;
   flex-flow: row wrap;
@@ -806,26 +807,26 @@ body {
 }
 
 @media (max-width: 1599px) {
-  /* line 25, source/blocks/header/header.scss */
+  /* line 27, source/blocks/header/header.scss */
   .header__navigation-list {
     width: 500px;
   }
 }
 
 @media (max-width: 949px) {
-  /* line 25, source/blocks/header/header.scss */
+  /* line 27, source/blocks/header/header.scss */
   .header__navigation-list {
     width: 400px;
   }
 }
 
-/* line 41, source/blocks/header/header.scss */
+/* line 43, source/blocks/header/header.scss */
 .header__navigation-item {
   margin-right: 13px;
   margin-bottom: 13px;
 }
 
-/* line 46, source/blocks/header/header.scss */
+/* line 48, source/blocks/header/header.scss */
 .header__navigation-link {
   display: block;
   padding: 1px 7px;
@@ -843,7 +844,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 55, source/blocks/header/header.scss */
+/* line 57, source/blocks/header/header.scss */
 .header__navigation-link--current {
   border-bottom: 1px solid #ffcc00;
 }
@@ -853,7 +854,7 @@ body {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 146px;
   font: normal 200 20px/1.6 "Muli", "Arial", sans-serif;
   color: #ffffff;
@@ -912,7 +913,7 @@ body {
   /* line 62, source/blocks/intro/intro.scss */
   .intro__text {
     width: auto;
-    font: normal 200 12px/1.6 "Muli", "Arial", sans-serif;
+    font: normal 200 14px/2 "Muli", "Arial", sans-serif;
   }
 }
 
@@ -1031,22 +1032,79 @@ body {
   position: relative;
   min-height: 930px;
   padding: 100px 0 150px;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #595666;
   background: top 100px left calc(50% - 543px)/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), bottom 0 left 0/150px 150px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+  overflow-x: hidden;
 }
 
-/* line 12, source/blocks/about/about.scss */
+@media (max-width: 1599px) {
+  /* line 1, source/blocks/about/about.scss */
+  .about {
+    padding: 100px 0 150px 414px;
+    background: top 100px left -100px/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), bottom 0 left 0/150px 150px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 1, source/blocks/about/about.scss */
+  .about {
+    padding: 100px 0 150px 320px;
+    background: top 100px left -200px/514px 730px no-repeat url("../img/camera-back-desktop@1x.jpg"), bottom 0 left 0/150px 150px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1, source/blocks/about/about.scss */
+  .about {
+    min-height: auto;
+    padding: 30px 0 60px;
+    background: bottom 0 left 0/60px 60px repeat-x url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+  }
+}
+
+/* line 44, source/blocks/about/about.scss */
 .about__container {
   padding-left: 435px;
 }
 
-/* line 16, source/blocks/about/about.scss */
+@media (max-width: 1599px) {
+  /* line 44, source/blocks/about/about.scss */
+  .about__container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1249px) {
+  /* line 44, source/blocks/about/about.scss */
+  .about__container {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 44, source/blocks/about/about.scss */
+  .about__container {
+    margin: 0 25px;
+  }
+}
+
+/* line 60, source/blocks/about/about.scss */
 .about__title {
   margin: 43px 0 5px;
   font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
   color: #2b2d5c;
 }
 
-/* line 23, source/blocks/about/about.scss */
+@media (max-width: 767px) {
+  /* line 60, source/blocks/about/about.scss */
+  .about__title {
+    margin: 25px 0 5px;
+    font: normal 300 24px/1.9 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 73, source/blocks/about/about.scss */
 .about__text {
   margin: 5px 0;
   padding: 0;
@@ -1054,28 +1112,85 @@ body {
   color: #595666;
 }
 
-/* line 31, source/blocks/about/about.scss */
+@media (max-width: 767px) {
+  /* line 73, source/blocks/about/about.scss */
+  .about__text {
+    font: normal 300 13px/1.6 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 85, source/blocks/about/about.scss */
 .about__section-title {
   margin: 25px 0 10px;
   font: normal 300 26px/1.46 "Trirong", "Times New Roman", serif;
   color: #595666;
 }
 
-/* line 38, source/blocks/about/about.scss */
+@media (max-width: 767px) {
+  /* line 85, source/blocks/about/about.scss */
+  .about__section-title {
+    margin: 20px 0 10px;
+    font: normal 300 18px/1.46 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 98, source/blocks/about/about.scss */
 .about__activities-list {
   display: flex;
   flex-flow: row wrap;
-  margin-right: -185px;
+  margin-right: -160px;
 }
 
-/* line 44, source/blocks/about/about.scss */
+@media (max-width: 1599px) {
+  /* line 98, source/blocks/about/about.scss */
+  .about__activities-list {
+    margin-right: -120px;
+  }
+}
+
+@media (max-width: 1249px) {
+  /* line 98, source/blocks/about/about.scss */
+  .about__activities-list {
+    margin-right: -40px;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 98, source/blocks/about/about.scss */
+  .about__activities-list {
+    margin-right: -20px;
+  }
+}
+
+/* line 116, source/blocks/about/about.scss */
 .about__activities-item {
   width: 135px;
-  margin-right: 168px;
-  margin-bottom: 30px;
+  margin-right: 160px;
+  margin-bottom: 25px;
 }
 
-/* line 50, source/blocks/about/about.scss */
+@media (max-width: 1599px) {
+  /* line 116, source/blocks/about/about.scss */
+  .about__activities-item {
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 1249px) {
+  /* line 116, source/blocks/about/about.scss */
+  .about__activities-item {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 949px) {
+  /* line 116, source/blocks/about/about.scss */
+  .about__activities-item {
+    margin-right: 20px;
+  }
+}
+
+/* line 134, source/blocks/about/about.scss */
 .about__activities-link {
   display: block;
 }
@@ -1090,7 +1205,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 56, source/blocks/about/about.scss */
+/* line 140, source/blocks/about/about.scss */
 .about__activities-title {
   margin: 7px 0 10px;
   font: normal 600 16px/2.3 "Muli", "Arial", sans-serif;
@@ -1098,7 +1213,14 @@ body {
   text-transform: uppercase;
 }
 
-/* line 64, source/blocks/about/about.scss */
+@media (max-width: 767px) {
+  /* line 140, source/blocks/about/about.scss */
+  .about__activities-title {
+    font: normal 600 13px/2.3 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 152, source/blocks/about/about.scss */
 .about__activities-photo-wrapper {
   overflow: hidden;
   width: 130px;
@@ -1115,9 +1237,16 @@ body {
   padding: 0;
 }
 
-/* line 71, source/blocks/about/about.scss */
+/* line 159, source/blocks/about/about.scss */
 .about__button {
   margin: 30px 0;
+}
+
+@media (max-width: 767px) {
+  /* line 159, source/blocks/about/about.scss */
+  .about__button {
+    margin: 20px 0;
+  }
 }
 
 /* line 1, source/blocks/clients/clients.scss */
