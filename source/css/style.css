@@ -1259,7 +1259,15 @@ body {
   background: top 0 center/1600px 297px no-repeat url("../img/clients-back-desktop@1x.jpg"), #383964;
 }
 
-/* line 14, source/blocks/clients/clients.scss */
+@media (max-width: 767px) {
+  /* line 1, source/blocks/clients/clients.scss */
+  .clients {
+    min-height: 268px;
+    background: top 15px center/1280px 238px no-repeat url("../img/clients-back-desktop@1x.jpg"), #383964;
+  }
+}
+
+/* line 22, source/blocks/clients/clients.scss */
 .clients__title {
   margin: 38px 0 10px;
   font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
@@ -1267,19 +1275,28 @@ body {
   text-align: center;
 }
 
-/* line 22, source/blocks/clients/clients.scss */
+@media (max-width: 767px) {
+  /* line 22, source/blocks/clients/clients.scss */
+  .clients__title {
+    margin: 20px 0 10px;
+    font: normal 300 24px/1.9 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 36, source/blocks/clients/clients.scss */
 .clients__list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
-/* line 27, source/blocks/clients/clients.scss */
+/* line 42, source/blocks/clients/clients.scss */
 .clients__item {
   margin-right: 5px;
   margin-bottom: 5px;
 }
 
-/* line 32, source/blocks/clients/clients.scss */
+/* line 47, source/blocks/clients/clients.scss */
 .clients__link {
   display: flex;
   align-items: center;
@@ -1298,7 +1315,15 @@ body {
   opacity: 0.3;
 }
 
-/* line 42, source/blocks/clients/clients.scss */
+@media (max-width: 767px) {
+  /* line 47, source/blocks/clients/clients.scss */
+  .clients__link {
+    width: 95px;
+    height: 45px;
+  }
+}
+
+/* line 62, source/blocks/clients/clients.scss */
 .clients__photo-wrapper {
   overflow: hidden;
 }
@@ -1313,32 +1338,60 @@ body {
   padding: 0;
 }
 
-/* line 45, source/blocks/clients/clients.scss */
+/* line 65, source/blocks/clients/clients.scss */
 .clients__photo-wrapper--salon {
   width: 163px;
   height: 35px;
 }
 
-/* line 50, source/blocks/clients/clients.scss */
+/* line 70, source/blocks/clients/clients.scss */
 .clients__photo-wrapper--luscious {
   width: 152px;
   height: 71px;
 }
 
-/* line 55, source/blocks/clients/clients.scss */
+/* line 75, source/blocks/clients/clients.scss */
 .clients__photo-wrapper--brillbird {
   width: 130px;
   height: 23px;
 }
 
-/* line 60, source/blocks/clients/clients.scss */
+/* line 80, source/blocks/clients/clients.scss */
 .clients__photo-wrapper--loxa {
   width: 175px;
   height: 34px;
 }
 
-/* line 65, source/blocks/clients/clients.scss */
+/* line 85, source/blocks/clients/clients.scss */
 .clients__photo-wrapper--babaria {
   width: 110px;
   height: 32px;
+}
+
+@media (max-width: 767px) {
+  /* line 92, source/blocks/clients/clients.scss */
+  .clients__photo-wrapper--salon {
+    width: 81px;
+    height: 17px;
+  }
+  /* line 97, source/blocks/clients/clients.scss */
+  .clients__photo-wrapper--luscious {
+    width: 76px;
+    height: 35px;
+  }
+  /* line 102, source/blocks/clients/clients.scss */
+  .clients__photo-wrapper--brillbird {
+    width: 65px;
+    height: 11px;
+  }
+  /* line 107, source/blocks/clients/clients.scss */
+  .clients__photo-wrapper--loxa {
+    width: 87px;
+    height: 17px;
+  }
+  /* line 112, source/blocks/clients/clients.scss */
+  .clients__photo-wrapper--babaria {
+    width: 55px;
+    height: 16px;
+  }
 }
