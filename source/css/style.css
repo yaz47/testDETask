@@ -649,7 +649,7 @@ body {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 980px) {
   /* line 63, source/sass/global.scss */
   .container {
     margin: 0 80px;
@@ -693,6 +693,13 @@ body {
 .button--blue {
   color: #ffffff;
   background-color: #2b2d5c;
+}
+
+/* line 23, source/blocks/button/button.scss */
+.button--white {
+  color: #f2c200;
+  border: 1px solid #f2c200;
+  background-color: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -973,7 +980,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 58, source/blocks/header/header.scss */
   .header__navigation-list {
     width: 400px;
@@ -1063,7 +1070,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 1, source/blocks/intro/intro.scss */
   .intro {
     background: top 146px left 40px/124px 124px no-repeat url("../img/cross.svg"), bottom -20px left -10px/169px 183px no-repeat url("../img/kubes-left.svg"), bottom -20px right -15px/169px 183px no-repeat url("../img/kubes-right.svg"), top 0 right -170px/800px 900px no-repeat url("../img/intro-back-desktop@1x.jpg"), #2b2d5c;
@@ -1084,7 +1091,7 @@ body {
   min-height: calc(100vh - 146px - 85px);
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 48, source/blocks/intro/intro.scss */
   .intro__container {
     min-height: calc(100vh - 146px - 214px);
@@ -1179,7 +1186,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 96, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 110px;
@@ -1255,7 +1262,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 1, source/blocks/about/about.scss */
   .about {
     padding: 100px 0 150px 320px;
@@ -1291,7 +1298,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 44, source/blocks/about/about.scss */
   .about__container {
     margin: 0 25px;
@@ -1364,7 +1371,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 98, source/blocks/about/about.scss */
   .about__activities-list {
     margin-right: -20px;
@@ -1392,7 +1399,7 @@ body {
   }
 }
 
-@media (max-width: 949px) {
+@media (max-width: 979px) {
   /* line 116, source/blocks/about/about.scss */
   .about__activities-item {
     margin-right: 20px;
@@ -1603,4 +1610,272 @@ body {
     width: 55px;
     height: 16px;
   }
+}
+
+/* line 1, source/blocks/portfolio/portfolio.scss */
+.portfolio {
+  position: relative;
+  display: flex;
+  padding: 100px 0;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  /* line 1, source/blocks/portfolio/portfolio.scss */
+  .portfolio {
+    display: block;
+    padding: 60px 0;
+  }
+}
+
+/* line 19, source/blocks/portfolio/portfolio.scss */
+.portfolio__text-wrapper {
+  position: relative;
+  display: flex;
+  width: 33%;
+  padding: 0 50px 50px 0;
+  border-right: 1px solid #4d407c;
+  border-bottom: 1px solid #4d407c;
+  background: bottom 0 left 0/150px 150px repeat-x url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+}
+
+/* line 31, source/blocks/portfolio/portfolio.scss */
+.portfolio__text-wrapper::before, .portfolio__text-wrapper::after {
+  content: "";
+  position: absolute;
+}
+
+/* line 37, source/blocks/portfolio/portfolio.scss */
+.portfolio__text-wrapper::before {
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4d407c;
+}
+
+/* line 46, source/blocks/portfolio/portfolio.scss */
+.portfolio__text-wrapper::after {
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 50px;
+  background-color: #f7f7fc;
+}
+
+@media (max-width: 1249px) {
+  /* line 19, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text-wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 19, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text-wrapper {
+    width: auto;
+    padding: 0 25px 25px 0;
+    background: bottom 0 left 0/75px 75px repeat-x url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #f7f7fc;
+  }
+  /* line 66, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text-wrapper::before {
+    top: 25px;
+  }
+  /* line 70, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text-wrapper::after {
+    height: 25px;
+  }
+}
+
+/* line 76, source/blocks/portfolio/portfolio.scss */
+.portfolio__text-container {
+  max-width: 800px;
+  padding: 0 60px 0 75px;
+  background-color: #f2c200;
+}
+
+@media (max-width: 767px) {
+  /* line 76, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text-container {
+    padding: 0 40px 0 50px;
+  }
+}
+
+/* line 87, source/blocks/portfolio/portfolio.scss */
+.portfolio__title {
+  margin-top: 185px;
+  margin-bottom: 40px;
+  font: normal 400 40px/1.9 "Trirong", "Times New Roman", serif;
+  color: #2b2d5c;
+}
+
+@media (max-width: 767px) {
+  /* line 87, source/blocks/portfolio/portfolio.scss */
+  .portfolio__title {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font: normal 400 24px/1.9 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 102, source/blocks/portfolio/portfolio.scss */
+.portfolio__text {
+  margin: 20px 0;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+}
+
+@media (max-width: 767px) {
+  /* line 102, source/blocks/portfolio/portfolio.scss */
+  .portfolio__text {
+    font: normal 300 13px/1.6 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 113, source/blocks/portfolio/portfolio.scss */
+.portfolio__more {
+  display: inline-block;
+  margin: 5px 0 50px;
+  font: normal 600 16px/2.3 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+}
+
+/* line 4, source/sass/mixins.scss */
+.portfolio__more:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.portfolio__more:active {
+  opacity: 0.3;
+}
+
+@media (max-width: 767px) {
+  /* line 113, source/blocks/portfolio/portfolio.scss */
+  .portfolio__more {
+    margin: 5px 0 40px;
+    font: normal 600 13px/2.3 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 129, source/blocks/portfolio/portfolio.scss */
+.portfolio__grid-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 67%;
+}
+
+@media (max-width: 1249px) {
+  /* line 129, source/blocks/portfolio/portfolio.scss */
+  .portfolio__grid-wrapper {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 129, source/blocks/portfolio/portfolio.scss */
+  .portfolio__grid-wrapper {
+    display: block;
+    width: auto;
+  }
+}
+
+/* line 145, source/blocks/portfolio/portfolio.scss */
+.portfolio__col-one {
+  width: 38%;
+}
+
+@media (max-width: 1249px) {
+  /* line 145, source/blocks/portfolio/portfolio.scss */
+  .portfolio__col-one {
+    width: 100%;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 145, source/blocks/portfolio/portfolio.scss */
+  .portfolio__col-one {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 0;
+  }
+}
+
+/* line 161, source/blocks/portfolio/portfolio.scss */
+.portfolio__col-two {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(62% + 35px);
+  margin-right: -35px;
+}
+
+@media (max-width: 1249px) {
+  /* line 161, source/blocks/portfolio/portfolio.scss */
+  .portfolio__col-two {
+    display: none;
+  }
+}
+
+/* line 172, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper {
+  overflow: hidden;
+  flex: 1 1 auto;
+  margin-right: 35px;
+  margin-bottom: 35px;
+}
+
+/* line 16, source/sass/mixins.scss */
+.portfolio__photo-wrapper picture,
+.portfolio__photo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 179, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper--xl {
+  width: 90%;
+}
+
+/* line 183, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper--l {
+  width: 60%;
+}
+
+/* line 187, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper--m {
+  width: 35%;
+}
+
+/* line 191, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper--s {
+  width: 20%;
+}
+
+@media (max-width: 1249px) {
+  /* line 172, source/blocks/portfolio/portfolio.scss */
+  .portfolio__photo-wrapper {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 172, source/blocks/portfolio/portfolio.scss */
+  .portfolio__photo-wrapper {
+    margin-bottom: 25px;
+  }
+}
+
+/* line 205, source/blocks/portfolio/portfolio.scss */
+.portfolio__button {
+  margin: 20px;
 }

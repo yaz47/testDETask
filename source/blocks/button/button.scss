@@ -20,6 +20,13 @@
     background-color: $midnight-blue;
   }
 
+  &--white {
+    color: $gold;
+
+    border: 1px solid $gold;
+    background-color: $white;
+  }
+
   @media (max-width: $only-mobile-width) {
     padding: 12px 35px;
 
