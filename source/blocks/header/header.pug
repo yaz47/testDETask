@@ -4,6 +4,9 @@ header(class='header')
     include ../site-logo/site-logo.pug
     +site-logo()(parentClass='header__site-logo')
 
+    include ../toggle/toggle.pug
+    +toggle()(parentClass='header__toggle')
+
     nav(class='header__navigation')
       ul(class='header__navigation-list')
         li(class='header__navigation-item')

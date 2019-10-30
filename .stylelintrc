@@ -528,9 +528,9 @@
       # "severity": "warning",
       "message": "Селекторов по тегу более двух использовать не стоит"
     }],
-    "selector-max-class": [2, {
+    "selector-max-class": [3, {
       # "severity": "warning",
-      "message": "Классов в селекторе более двух использовать не стоит"
+      "message": "Классов в селекторе более трех использовать не стоит"
     }],
     "selector-max-combinators": [2, {
       # "severity": "warning",

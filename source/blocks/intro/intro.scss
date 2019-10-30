@@ -34,8 +34,10 @@
   }
 
   @media (max-width: $only-mobile-width) {
+    padding-top: 90px;
+
     background:
-      top 146px left 25px / 75px 75px no-repeat url("../img/cross.svg"),
+      top 100px left 25px / 75px 75px no-repeat url("../img/cross.svg"),
       bottom -78px left -10px / 169px 183px no-repeat url("../img/kubes-left.svg"),
       bottom -78px right -15px / 169px 183px no-repeat url("../img/kubes-right.svg"),
       top 0 right -135px / 400px 450px no-repeat url("../img/intro-back-desktop@1x.jpg"),
