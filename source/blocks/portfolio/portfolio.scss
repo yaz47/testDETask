@@ -237,6 +237,22 @@
   }
 }
 
+.portfolio__share {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: none;
+  max-width: 100px;
+
+  transform: translateX(-50%);
+}
+
+.portfolio__photo-wrapper:hover .portfolio__share,
+.portfolio__photo-wrapper:focus .portfolio__share,
+.portfolio__photo-wrapper--active .portfolio__share {
+  display: block;
+}
+
 .portfolio__button {
   margin: 20px;
 }

@@ -1905,6 +1905,23 @@ body {
 }
 
 /* line 240, source/blocks/portfolio/portfolio.scss */
+.portfolio__share {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: none;
+  max-width: 100px;
+  transform: translateX(-50%);
+}
+
+/* line 250, source/blocks/portfolio/portfolio.scss */
+.portfolio__photo-wrapper:hover .portfolio__share,
+.portfolio__photo-wrapper:focus .portfolio__share,
+.portfolio__photo-wrapper--active .portfolio__share {
+  display: block;
+}
+
+/* line 256, source/blocks/portfolio/portfolio.scss */
 .portfolio__button {
   margin: 20px;
 }
