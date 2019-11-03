@@ -889,6 +889,72 @@ body {
   fill: #ffffff;
 }
 
+/* line 1, source/blocks/article/article.scss */
+.article {
+  background-color: #ffffff;
+}
+
+/* line 4, source/blocks/article/article.scss */
+.article--active, .article:hover, .article:focus {
+  box-shadow: 0 0 80.36px 1.64px rgba(43, 45, 92, 0.2);
+}
+
+/* line 11, source/blocks/article/article.scss */
+.article__photo-wrapper {
+  overflow: hidden;
+}
+
+/* line 16, source/sass/mixins.scss */
+.article__photo-wrapper picture,
+.article__photo-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, source/blocks/article/article.scss */
+.article__container {
+  margin: 0 35px;
+}
+
+/* line 19, source/blocks/article/article.scss */
+.article__title {
+  margin: 20px 0 10px;
+  font: normal 600 20px/1.5 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+}
+
+/* line 26, source/blocks/article/article.scss */
+.article__type {
+  margin: 15px 0;
+  font: normal 300 15px/1.75 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+}
+
+/* line 33, source/blocks/article/article.scss */
+.article__type-text {
+  font: normal 600 15px/1.75 "Muli", "Arial", sans-serif;
+}
+
+/* line 37, source/blocks/article/article.scss */
+.article__text {
+  margin: 15px 0 5px;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #595666;
+}
+
+/* line 44, source/blocks/article/article.scss */
+.article__more {
+  display: inline-block;
+  margin: 10px 0 50px;
+  padding-right: 15px;
+  font: normal 400 16px/1.5 "Muli", "Arial", sans-serif;
+  color: #595666;
+  box-shadow: inset 0 -10px 0 0 #ffe066;
+}
+
 /* line 1, source/blocks/header/header.scss */
 .header {
   position: relative;
@@ -1432,7 +1498,7 @@ body {
 @media (max-width: 767px) {
   /* line 140, source/blocks/about/about.scss */
   .about__activities-title {
-    font: normal 600 13px/2.3 "Muli", "Arial", sans-serif;
+    font: normal 600 13px/1.75 "Muli", "Arial", sans-serif;
   }
 }
 
@@ -1757,7 +1823,7 @@ body {
   /* line 113, source/blocks/portfolio/portfolio.scss */
   .portfolio__more {
     margin: 5px 0 40px;
-    font: normal 600 13px/2.3 "Muli", "Arial", sans-serif;
+    font: normal 600 13px/1.75 "Muli", "Arial", sans-serif;
   }
 }
 
@@ -1914,14 +1980,90 @@ body {
   transform: translateX(-50%);
 }
 
-/* line 250, source/blocks/portfolio/portfolio.scss */
+@media (max-width: 979px) {
+  /* line 240, source/blocks/portfolio/portfolio.scss */
+  .portfolio__share {
+    display: block;
+  }
+}
+
+/* line 254, source/blocks/portfolio/portfolio.scss */
 .portfolio__photo-wrapper:hover .portfolio__share,
 .portfolio__photo-wrapper:focus .portfolio__share,
 .portfolio__photo-wrapper--active .portfolio__share {
   display: block;
 }
 
-/* line 256, source/blocks/portfolio/portfolio.scss */
+/* line 260, source/blocks/portfolio/portfolio.scss */
 .portfolio__button {
   margin: 20px;
+}
+
+/* line 1, source/blocks/blog/blog.scss */
+.blog {
+  position: relative;
+  padding: 25px 0 50px;
+  font: normal 300 16px/1.75 "Muli", "Arial", sans-serif;
+  color: #595666;
+  background: bottom 0 left 0/200px 200px repeat-x url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNTAgMTUwIj4KPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNGRkYiIC8+Cjwvc3ZnPgo="), #fafafd;
+  overflow-x: hidden;
+}
+
+/* line 14, source/blocks/blog/blog.scss */
+.blog::before {
+  content: "";
+  position: absolute;
+  top: 127px;
+  left: calc(50% - 260px);
+  width: 100%;
+  height: 640px;
+  border: 4px solid #ffffff;
+}
+
+/* line 26, source/blocks/blog/blog.scss */
+.blog__container {
+  width: 1475px;
+}
+
+/* line 30, source/blocks/blog/blog.scss */
+.blog__title {
+  width: 35%;
+  margin: 17px auto;
+  font: normal 300 40px/1.9 "Trirong", "Times New Roman", serif;
+  color: #2b2d5c;
+  text-align: center;
+}
+
+/* line 39, source/blocks/blog/blog.scss */
+.blog__text {
+  width: 35%;
+  margin: 15px auto;
+  font: normal 300 20px/1.7 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+  text-align: center;
+}
+
+/* line 48, source/blocks/blog/blog.scss */
+.blog__grid {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% + 55px);
+  margin-top: 75px;
+  margin-right: -55px;
+}
+
+/* line 56, source/blocks/blog/blog.scss */
+.blog__article {
+  flex: 1 1 auto;
+  width: 29%;
+  margin-right: 55px;
+  margin-bottom: 55px;
+  /* stylelint-disable selector-pseudo-class-blacklist */
+  /* stylelint-enable selector-pseudo-class-blacklist */
+}
+
+/* line 63, source/blocks/blog/blog.scss */
+.blog__article:nth-child(1), .blog__article:nth-child(3) {
+  align-self: flex-start;
+  margin-top: -240px;
 }

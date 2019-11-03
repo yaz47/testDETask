@@ -245,6 +245,10 @@
   max-width: 100px;
 
   transform: translateX(-50%);
+
+  @media (max-width: $only-tablet-width) {
+    display: block;
+  }
 }
 
 .portfolio__photo-wrapper:hover .portfolio__share,

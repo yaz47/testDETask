@@ -15,10 +15,12 @@ $snow-white: #fefeff;
 $midnight-blue: #2b2d5c;
 $magenta-blue: #595666;
 $grayish-blue: #f7f7fc;
+$light-grayish-blue: #fafafd;
 $dark-blue: #383964;
 $dark-modern-blue: #4d407c;
 $gold: #f2c200;
 $pure-yellow: #ffcc00;
+$light-yellow: #ffe066;
 $black: #000000;
 
 $default-text-color: $white;
@@ -36,6 +38,10 @@ $text-default-600-14: normal 600 14px/1.5 $default-font;
 $text-default-600-16: normal 600 16px/2.3 $default-font;
 $text-default-600-14: normal 600 14px/2.3 $default-font;
 $text-default-600-13: normal 600 13px/2.3 $default-font;
+
+
+$text-default-600-15: normal 600 15px/1.75 $default-font;
+$text-default-600-13: normal 600 13px/1.75 $default-font;
 
 
 $text-default-400-16: normal 400 16px/1.5 $default-font;
