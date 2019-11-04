@@ -14,6 +14,10 @@
 
 .article__container {
   margin: 0 35px;
+
+  @media (max-width: $only-mobile-width) {
+    margin: 0 30px;
+  }
 }
 
 .article__title {
@@ -21,6 +25,10 @@
 
   font: $text-default-600-20;
   color: $midnight-blue;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-default-600-14;
+  }
 }
 
 .article__type {
@@ -28,10 +36,18 @@
 
   font: $text-default-300-15;
   color: $midnight-blue;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-default-300-13;
+  }
 }
 
 .article__type-text {
   font: $text-default-600-15;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-default-600-13;
+  }
 }
 
 .article__text {
@@ -39,6 +55,10 @@
 
   font: $text-default-300-16;
   color: $magenta-blue;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-default-300-13;
+  }
 }
 
 .article__more {
@@ -50,4 +70,10 @@
   color: $magenta-blue;
 
   box-shadow: inset 0 -10px 0 0 $light-yellow;
+
+  @media (max-width: $only-mobile-width) {
+    font: $text-default-400-13;
+
+    box-shadow: inset 0 -9px 0 0 $light-yellow;
+  }
 }
