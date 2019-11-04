@@ -17,6 +17,13 @@
       $white;
   }
 
+  @media (max-width: $only-half-full-hd) {
+    background:
+      bottom 0 right 120px / 2px 330px no-repeat url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDMzMCI+DQo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIzMzAiIGZpbGw9IiMyYjJkNWMiIC8+DQo8L3N2Zz4="),
+      bottom 0 right 20px / 260px 2px no-repeat url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMiI+DQo8cmVjdCB3aWR0aD0iMjYwIiBoZWlnaHQ9IjIiIGZpbGw9IiMyYjJkNWMiIC8+DQo8L3N2Zz4="),
+      $white;
+  }
+
   @media (max-width: $only-mobile-width) {
     display: block;
     padding: 60px 0;
