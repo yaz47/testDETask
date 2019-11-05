@@ -670,6 +670,7 @@ body {
   padding: 18px 50px;
   font: normal 400 16px/1.5 "Muli", "Arial", sans-serif;
   color: #2b2d5c;
+  border: none;
   border-radius: 30px;
   background-color: #f2c200;
 }
@@ -684,18 +685,18 @@ body {
   opacity: 0.3;
 }
 
-/* line 13, source/blocks/button/button.scss */
+/* line 14, source/blocks/button/button.scss */
 .button--uppercase {
   text-transform: uppercase;
 }
 
-/* line 17, source/blocks/button/button.scss */
+/* line 18, source/blocks/button/button.scss */
 .button--blue {
   color: #ffffff;
   background-color: #2b2d5c;
 }
 
-/* line 23, source/blocks/button/button.scss */
+/* line 24, source/blocks/button/button.scss */
 .button--white {
   color: #f2c200;
   border: 1px solid #f2c200;
@@ -983,7 +984,7 @@ body {
 /* line 64, source/blocks/article/article.scss */
 .article__more {
   display: inline-block;
-  margin: 10px 0 50px;
+  margin: 10px 0 60px;
   padding-right: 15px;
   font: normal 400 16px/1.5 "Muli", "Arial", sans-serif;
   color: #595666;
@@ -2248,4 +2249,79 @@ body {
   .blog__article:nth-child(3n), .blog__article:nth-child(3n + 1), .blog__article:last-child {
     margin-top: 0;
   }
+}
+
+/* line 1, source/blocks/contact/contact.scss */
+.contact {
+  position: relative;
+  padding: 20px 0;
+  background: top 0 center/1600px 528px no-repeat url("../img/contact-back-desktop@1x.jpg"), #2b2d5c;
+}
+
+/* line 10, source/blocks/contact/contact.scss */
+.contact__title {
+  width: 50%;
+  margin: 20px auto;
+  font: normal 400 40px/1.9 "Trirong", "Times New Roman", serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  /* line 10, source/blocks/contact/contact.scss */
+  .contact__title {
+    width: 80%;
+    margin: 15px auto;
+    font: normal 400 24px/1.9 "Trirong", "Times New Roman", serif;
+  }
+}
+
+/* line 26, source/blocks/contact/contact.scss */
+.contact__form-wrapper {
+  width: 95%;
+  max-width: 500px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  /* line 26, source/blocks/contact/contact.scss */
+  .contact__form-wrapper {
+    margin: 20px auto;
+  }
+}
+
+/* line 38, source/blocks/contact/contact.scss */
+.contact__input,
+.contact__textarea {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+  padding: 10px 27px;
+  font: normal 300 15px/1.75 "Muli", "Arial", sans-serif;
+  color: #2b2d5c;
+  border: none;
+  background-color: #b6b6c7;
+}
+
+/* line 51, source/blocks/contact/contact.scss */
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  font: inherit;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  /* line 38, source/blocks/contact/contact.scss */
+  .contact__input,
+  .contact__textarea {
+    margin: 20px 0;
+    font: normal 300 13px/1.6 "Muli", "Arial", sans-serif;
+  }
+}
+
+/* line 63, source/blocks/contact/contact.scss */
+.contact__button {
+  max-width: 400px;
+  margin: 10px;
 }

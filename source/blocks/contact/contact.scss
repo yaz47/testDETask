@@ -1,0 +1,66 @@
+.contact {
+  position: relative;
+  padding: 20px 0;
+
+  background:
+    top 0 center / 1600px 528px no-repeat url("../img/contact-back-desktop@1x.jpg"),
+    $midnight-blue;
+}
+
+.contact__title {
+  width: 50%;
+  margin: 20px auto;
+
+  font: $text-title-400-40;
+  color: $white;
+  text-align: center;
+
+  @media (max-width: $only-mobile-width) {
+    width: 80%;
+    margin: 15px auto;
+
+    font: $text-title-400-24;
+  }
+}
+
+.contact__form-wrapper {
+  width: 95%;
+  max-width: 500px;
+  margin: 25px auto;
+
+  text-align: center;
+
+  @media (max-width: $only-mobile-width) {
+    margin: 20px auto;
+  }
+}
+
+.contact__input,
+.contact__textarea {
+  display: block;
+  width: 100%;
+  margin: 25px 0;
+  padding: 10px 27px;
+
+  font: $text-default-300-15;
+  color: $midnight-blue;
+
+  border: none;
+  background-color: $dark-grayish-blue;
+
+  &::placeholder {
+    font: inherit;
+    color: inherit;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    margin: 20px 0;
+
+    font: $text-default-300-13;
+  }
+}
+
+.contact__button {
+  max-width: 400px;
+  margin: 10px;
+}
