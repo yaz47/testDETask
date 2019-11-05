@@ -2325,3 +2325,41 @@ body {
   max-width: 400px;
   margin: 10px;
 }
+
+/* stylelint-disable plugin/selector-bem-pattern */
+/* line 2, source/blocks/template/template.scss */
+.success,
+.error {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding-top: 300px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 21, source/blocks/template/template.scss */
+.error {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* line 25, source/blocks/template/template.scss */
+.success__message,
+.error__message {
+  position: relative;
+  font: normal 400 60px/1.2 "Trirong", "Times New Roman", serif;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  /* line 25, source/blocks/template/template.scss */
+  .success__message,
+  .error__message {
+    font: normal 400 36px/1.2 "Trirong", "Times New Roman", serif;
+  }
+}

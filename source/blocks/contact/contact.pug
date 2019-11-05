@@ -12,10 +12,9 @@ section(class='contact')
           type='text'
           id='name'
           name='name'
-          pattern='[а-яА-ЯёЁ]{2,30}'
-          title='Name'
+          pattern='[а-яА-ЯёЁ\\w\\s]{2,30}'
+          title='Name can contain letters and digits from 2 to 30 symbols'
           placeholder='*Your name'
-          autofocus
           required)
         label(class='visually-hidden' for='email') Email
         input(class='contact__input'
@@ -29,7 +28,6 @@ section(class='contact')
         textarea(class='contact__textarea'
           id='message'
           name='message'
-          title='Message'
           placeholder='Your Messages'
           rows='3'
           autocomplete='off'
