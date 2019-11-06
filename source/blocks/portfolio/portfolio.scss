@@ -3,7 +3,6 @@
   display: flex;
   padding: 100px 0;
 
-  font: $text-default-300-16;
   color: $midnight-blue;
 
   overflow-x: hidden;
@@ -105,25 +104,25 @@
   margin-top: 185px;
   margin-bottom: 40px;
 
-  font: $text-title-400-40;
+  font: $text-portfolio-title;
   color: $midnight-blue;
 
   @media (max-width: $only-mobile-width) {
     margin-top: 100px;
     margin-bottom: 25px;
 
-    font: $text-title-400-24;
+    font: $text-portfolio-title-mobile;
   }
 }
 
 .portfolio__text {
   margin: 20px 0;
 
-  font: $text-default-300-16;
+  font: $text-portfolio;
   color: $midnight-blue;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-13;
+    font: $text-portfolio-mobile;
   }
 }
 
@@ -133,13 +132,13 @@
   display: inline-block;
   margin: 5px 0 50px;
 
-  font: $text-default-600-16;
+  font: $text-portfolio-more;
   color: $midnight-blue;
 
   @media (max-width: $only-mobile-width) {
     margin: 5px 0 40px;
 
-    font: $text-default-600-13;
+    font: $text-portfolio-more-mobile;
   }
 }
 

@@ -5,7 +5,6 @@
   min-height: 100vh;
   padding-top: 146px;
 
-  font: $text-default-200-20;
   color: $white;
 
   background:
@@ -62,7 +61,7 @@
   width: 600px;
   margin: 206px 0 10px;
 
-  font: $text-title-300-60;
+  font: $text-intro-title;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
@@ -70,7 +69,7 @@
     max-width: 400px;
     margin-top: 100px;
 
-    font: $text-title-300-36;
+    font: $text-intro-title-mobile;
   }
 }
 
@@ -79,13 +78,13 @@
   margin: 15px 0;
   padding: 0;
 
-  font: $text-default-200-20;
+  font: $text-intro;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
     width: auto;
 
-    font: $text-default-200-14;
+    font: $text-intro-mobile;
   }
 }
 

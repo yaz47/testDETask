@@ -3,7 +3,6 @@
   min-height: 930px;
   padding: 100px 0 150px;
 
-  font: $text-default-300-16;
   color: $magenta-blue;
 
   background:
@@ -60,13 +59,13 @@
 .about__title {
   margin: 43px 0 5px;
 
-  font: $text-title-300-40;
+  font: $text-about-title;
   color: $midnight-blue;
 
   @media (max-width: $only-mobile-width) {
     margin: 25px 0 5px;
 
-    font: $text-title-300-24;
+    font: $text-about-title-mobile;
   }
 }
 
@@ -74,24 +73,24 @@
   margin: 5px 0;
   padding: 0;
 
-  font: $text-default-300-16;
+  font: $text-about;
   color: $magenta-blue;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-13;
+    font: $text-about-mobile;
   }
 }
 
 .about__section-title {
   margin: 25px 0 10px;
 
-  font: $text-title-300-26;
+  font: $text-about-section;
   color: $magenta-blue;
 
   @media (max-width: $only-mobile-width) {
     margin: 20px 0 10px;
 
-    font: $text-title-300-18;
+    font: $text-about-section-mobile;
   }
 }
 
@@ -140,12 +139,12 @@
 .about__activities-title {
   margin: 7px 0 10px;
 
-  font: $text-default-600-16;
+  font: $text-about-activities;
   color: $magenta-blue;
   text-transform: uppercase;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-600-13;
+    font: $text-about-activities-mobile;
   }
 }
 

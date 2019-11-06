@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 50px;
 
-  font: $text-default-300-14;
   color: $white;
 
   border-top: 1px solid rgba($white, 0.2);
@@ -82,22 +81,22 @@
 .footer__title-contact {
   margin: 33px 0 8px;
 
-  font: $text-default-600-20;
+  font: $text-footer-title-contact;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-600-14;
+    font: $text-footer-title-contact-mobile;
   }
 }
 
 .footer__address {
   margin: 8px 0;
 
-  font: $text-default-300-14;
+  font: $text-footer-address;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-13;
+    font: $text-footer-address-mobile;
   }
 }
 
@@ -116,11 +115,11 @@
 .footer__title {
   margin: 25px 0 18px;
 
-  font: $text-default-300-24;
+  font: $text-footer-title;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-18;
+    font: $text-footer-title-mobile;
   }
 }
 
@@ -156,30 +155,30 @@
 .footer__post-title {
   margin: 0;
 
-  font: $text-default-300-16-slim;
+  font: $text-footer-post-title;
   color: rgba($white, 0.7);
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-13-slim;
+    font: $text-footer-post-title-mobile;
   }
 }
 
 .footer__post-type {
   margin: 0;
 
-  font: $text-default-300-14;
+  font: $text-footer-post-type;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-300-13;
+    font: $text-footer-post-type-mobile;
   }
 }
 
 .footer__post-type-text {
-  font: $text-default-600-14;
+  font: $text-footer-post-type-text;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-600-13;
+    font: $text-footer-post-type-text-mobile;
   }
 }
 
@@ -190,13 +189,13 @@
   width: 50%;
   margin: 10px auto;
 
-  font: $text-default-600-16;
+  font: $text-footer-more;
   color: $white;
   text-align: center;
   text-transform: uppercase;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-600-13;
+    font: $text-footer-more-mobile;
   }
 }
 
@@ -206,11 +205,11 @@
   display: block;
   margin: 0;
 
-  font: $text-default-600-14;
+  font: $text-footer-nav;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-600-13;
+    font: $text-footer-nav-mobile;
   }
 }
 
@@ -245,11 +244,11 @@
   margin: 17px auto;
   padding: 0;
 
-  font: $text-default-200-14;
+  font: $text-footer-copy;
   color: rgba($white, 0.25);
   text-align: center;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-default-200-13;
+    font: $text-footer-copy-mobile;
   }
 }

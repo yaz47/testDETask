@@ -2,7 +2,6 @@
   position: relative;
   padding: 25px 0 50px;
 
-  font: $text-default-300-16;
   color: $magenta-blue;
 
   background:
@@ -78,7 +77,7 @@
   width: 35%;
   margin: 17px auto;
 
-  font: $text-title-300-40;
+  font: $text-blog-title;
   color: $midnight-blue;
   text-align: center;
 
@@ -90,7 +89,7 @@
   @media (max-width: $only-mobile-width) {
     width: 100%;
 
-    font: $text-title-300-24;
+    font: $text-blog-title-mobile;
   }
 }
 
@@ -98,7 +97,7 @@
   width: 35%;
   margin: 15px auto;
 
-  font: $text-default-300-20;
+  font: $text-blog;
   color: $midnight-blue;
   text-align: center;
 
@@ -110,7 +109,7 @@
   @media (max-width: $only-mobile-width) {
     width: 100%;
 
-    font: $text-default-300-14;
+    font: $text-blog-mobile;
   }
 }
 

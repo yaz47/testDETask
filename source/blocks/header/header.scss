@@ -5,7 +5,6 @@
   margin-bottom: -146px;
   padding-top: 40px;
 
-  font: $text-default-600-14;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
@@ -93,7 +92,7 @@
   display: block;
   padding: 1px 7px;
 
-  font: $text-default-600-14;
+  font: $text-header-navigation;
   color: $white;
 
   &--current {

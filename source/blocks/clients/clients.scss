@@ -3,7 +3,6 @@
   min-height: 300px;
   padding: 10px 0;
 
-  font: $text-default-200-20;
   color: $white;
 
   background:
@@ -22,14 +21,14 @@
 .clients__title {
   margin: 38px 0 10px;
 
-  font: $text-title-300-40;
+  font: $text-clients-title;
   color: $white;
   text-align: center;
 
   @media (max-width: $only-mobile-width) {
     margin: 20px 0 10px;
 
-    font: $text-title-300-24;
+    font: $text-clients-title-mobile;
   }
 }
 

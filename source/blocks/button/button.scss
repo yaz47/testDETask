@@ -4,7 +4,7 @@
   display: inline-block;
   padding: 18px 50px;
 
-  font: $text-default-400-16;
+  font: $text-button;
   color: $midnight-blue;
 
   border: none;
@@ -31,7 +31,7 @@
   @media (max-width: $only-mobile-width) {
     padding: 12px 35px;
 
-    font: $text-default-400-13;
+    font: $text-button-mobile;
 
     border-radius: 20px;
   }

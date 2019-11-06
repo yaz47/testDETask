@@ -26,10 +26,10 @@
 .error__message {
   position: relative;
 
-  font: $text-title-400-60;
+  font: $text-template;
   color: $white;
 
   @media (max-width: $only-mobile-width) {
-    font: $text-title-400-36;
+    font: $text-template-mobile;
   }
 }
