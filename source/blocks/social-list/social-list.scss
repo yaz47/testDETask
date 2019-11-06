@@ -1,6 +1,7 @@
 .social-list {
   display: flex;
   flex-flow: row wrap;
+  margin-right: -10px;
 }
 
 .social-list__item {
@@ -24,5 +25,9 @@
 
 .social-list--slim .social-list__item {
   margin-right: 0;
-  margin-bottom: 0;
+
+  & .social-list__item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }

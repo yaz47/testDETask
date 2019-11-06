@@ -856,15 +856,16 @@ body {
 .social-list {
   display: flex;
   flex-flow: row wrap;
+  margin-right: -10px;
 }
 
-/* line 6, source/blocks/social-list/social-list.scss */
+/* line 7, source/blocks/social-list/social-list.scss */
 .social-list__item {
   margin-right: 13px;
   margin-bottom: 13px;
 }
 
-/* line 11, source/blocks/social-list/social-list.scss */
+/* line 12, source/blocks/social-list/social-list.scss */
 .social-list__link {
   display: flex;
   align-items: center;
@@ -883,13 +884,18 @@ body {
   opacity: 0.3;
 }
 
-/* line 21, source/blocks/social-list/social-list.scss */
+/* line 22, source/blocks/social-list/social-list.scss */
 .social-list__icon {
   fill: #ffffff;
 }
 
-/* line 25, source/blocks/social-list/social-list.scss */
+/* line 26, source/blocks/social-list/social-list.scss */
 .social-list--slim .social-list__item {
+  margin-right: 0;
+}
+
+/* line 29, source/blocks/social-list/social-list.scss */
+.social-list--slim .social-list__item .social-list__item {
   margin-right: 0;
   margin-bottom: 0;
 }
@@ -1244,14 +1250,14 @@ body {
 @media (max-width: 979px) {
   /* line 47, source/blocks/intro/intro.scss */
   .intro__container {
-    min-height: calc(100vh - 146px - 214px);
+    min-height: calc(100vh - 146px - 75px);
   }
 }
 
 @media (max-width: 767px) {
   /* line 47, source/blocks/intro/intro.scss */
   .intro__container {
-    min-height: calc(100vh - 90px - 202px);
+    min-height: calc(100vh - 90px - 107px);
   }
 }
 
@@ -1346,27 +1352,28 @@ body {
 @media (max-width: 979px) {
   /* line 99, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
-    width: 110px;
+    width: 250px;
+    padding: 20px 20px 10px;
   }
 }
 
 @media (max-width: 767px) {
   /* line 99, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
-    width: 70px;
-    padding: 15px 45px 14px 20px;
+    width: 100px;
+    padding: 10px;
   }
-  /* line 145, source/blocks/intro/intro.scss */
+  /* line 146, source/blocks/intro/intro.scss */
   .intro__social-wrapper::before {
     width: 50px;
   }
-  /* line 149, source/blocks/intro/intro.scss */
+  /* line 150, source/blocks/intro/intro.scss */
   .intro__social-wrapper::after {
     width: 57px;
   }
 }
 
-/* line 155, source/blocks/intro/intro.scss */
+/* line 156, source/blocks/intro/intro.scss */
 .intro__scroll {
   position: absolute;
   bottom: 50px;
@@ -1394,7 +1401,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 155, source/blocks/intro/intro.scss */
+  /* line 156, source/blocks/intro/intro.scss */
   .intro__scroll {
     bottom: 25px;
   }
@@ -2769,7 +2776,7 @@ body {
 /* line 1, source/blocks/scroll/scroll.scss */
 .scroll {
   position: fixed;
-  z-index: 2000;
+  z-index: 50;
   right: 15vw;
   bottom: 5vh;
   display: none;

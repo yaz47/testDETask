@@ -49,11 +49,11 @@
   min-height: calc(100vh - 146px - 85px);
 
   @media (max-width: $only-tablet-width) {
-    min-height: calc(100vh - 146px - 214px);
+    min-height: calc(100vh - 146px - 75px);
   }
 
   @media (max-width: $only-mobile-width) {
-    min-height: calc(100vh - 90px - 202px);
+    min-height: calc(100vh - 90px - 107px);
   }
 }
 
@@ -135,12 +135,13 @@
   }
 
   @media (max-width: $only-tablet-width) {
-    width: 110px;
+    width: 250px;
+    padding: 20px 20px 10px;
   }
 
   @media (max-width: $only-mobile-width) {
-    width: 70px;
-    padding: 15px 45px 14px 20px;
+    width: 100px;
+    padding: 10px;
 
     &::before {
       width: 50px;
