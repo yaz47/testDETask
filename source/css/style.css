@@ -1252,7 +1252,14 @@ body {
   }
 }
 
-/* line 57, source/blocks/intro/intro.scss */
+@media (max-width: 767px) {
+  /* line 48, source/blocks/intro/intro.scss */
+  .intro__container {
+    min-height: calc(100vh - 90px - 202px);
+  }
+}
+
+/* line 61, source/blocks/intro/intro.scss */
 .intro__title {
   width: 600px;
   margin: 206px 0 10px;
@@ -1261,7 +1268,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 57, source/blocks/intro/intro.scss */
+  /* line 61, source/blocks/intro/intro.scss */
   .intro__title {
     width: auto;
     max-width: 400px;
@@ -1270,7 +1277,7 @@ body {
   }
 }
 
-/* line 73, source/blocks/intro/intro.scss */
+/* line 77, source/blocks/intro/intro.scss */
 .intro__text {
   width: 600px;
   margin: 15px 0;
@@ -1280,26 +1287,26 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 73, source/blocks/intro/intro.scss */
+  /* line 77, source/blocks/intro/intro.scss */
   .intro__text {
     width: auto;
     font: normal 200 14px/2 "Muli", "Arial", sans-serif;
   }
 }
 
-/* line 88, source/blocks/intro/intro.scss */
+/* line 92, source/blocks/intro/intro.scss */
 .intro__button {
   margin: 30px 0;
 }
 
 @media (max-width: 767px) {
-  /* line 88, source/blocks/intro/intro.scss */
+  /* line 92, source/blocks/intro/intro.scss */
   .intro__button {
     margin: 15px 0;
   }
 }
 
-/* line 96, source/blocks/intro/intro.scss */
+/* line 100, source/blocks/intro/intro.scss */
 .intro__social-wrapper {
   position: relative;
   flex-shrink: 0;
@@ -1310,7 +1317,7 @@ body {
   border-left: 1px solid #ffffff;
 }
 
-/* line 106, source/blocks/intro/intro.scss */
+/* line 110, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before, .intro__social-wrapper::after {
   content: "";
   position: absolute;
@@ -1320,13 +1327,13 @@ body {
   border-top: 1px solid #ffffff;
 }
 
-/* line 117, source/blocks/intro/intro.scss */
+/* line 121, source/blocks/intro/intro.scss */
 .intro__social-wrapper::before {
   width: 85px;
   transform: translateX(-100%);
 }
 
-/* line 123, source/blocks/intro/intro.scss */
+/* line 127, source/blocks/intro/intro.scss */
 .intro__social-wrapper::after {
   width: 95px;
   transform-origin: top left;
@@ -1334,36 +1341,36 @@ body {
 }
 
 @media (max-width: 1599px) {
-  /* line 96, source/blocks/intro/intro.scss */
+  /* line 100, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 300px;
   }
 }
 
 @media (max-width: 979px) {
-  /* line 96, source/blocks/intro/intro.scss */
+  /* line 100, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 110px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 96, source/blocks/intro/intro.scss */
+  /* line 100, source/blocks/intro/intro.scss */
   .intro__social-wrapper {
     width: 70px;
     padding: 15px 45px 14px 20px;
   }
-  /* line 142, source/blocks/intro/intro.scss */
+  /* line 146, source/blocks/intro/intro.scss */
   .intro__social-wrapper::before {
     width: 50px;
   }
-  /* line 146, source/blocks/intro/intro.scss */
+  /* line 150, source/blocks/intro/intro.scss */
   .intro__social-wrapper::after {
     width: 57px;
   }
 }
 
-/* line 152, source/blocks/intro/intro.scss */
+/* line 156, source/blocks/intro/intro.scss */
 .intro__scroll {
   position: absolute;
   bottom: 50px;
@@ -1391,7 +1398,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 152, source/blocks/intro/intro.scss */
+  /* line 156, source/blocks/intro/intro.scss */
   .intro__scroll {
     bottom: 25px;
   }

@@ -52,6 +52,10 @@
   @media (max-width: $only-tablet-width) {
     min-height: calc(100vh - 146px - 214px);
   }
+
+  @media (max-width: $only-mobile-width) {
+    min-height: calc(100vh - 90px - 202px);
+  }
 }
 
 .intro__title {
