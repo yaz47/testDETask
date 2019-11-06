@@ -611,6 +611,7 @@ ul {
 
 /* line 33, source/sass/global.scss */
 body {
+  position: relative;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -619,7 +620,7 @@ body {
   background-color: #2b2d5c;
 }
 
-/* line 44, source/sass/global.scss */
+/* line 45, source/sass/global.scss */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -633,28 +634,28 @@ body {
   overflow: hidden;
 }
 
-/* line 60, source/sass/global.scss */
+/* line 61, source/sass/global.scss */
 .container {
   position: relative;
   margin: 0 25px;
 }
 
 @media (min-width: 768px) {
-  /* line 60, source/sass/global.scss */
+  /* line 61, source/sass/global.scss */
   .container {
     margin: 0 40px;
   }
 }
 
 @media (min-width: 980px) {
-  /* line 60, source/sass/global.scss */
+  /* line 61, source/sass/global.scss */
   .container {
     margin: 0 80px;
   }
 }
 
 @media (min-width: 1600px) {
-  /* line 60, source/sass/global.scss */
+  /* line 61, source/sass/global.scss */
   .container {
     width: 1170px;
     margin: 0 auto;
@@ -2763,4 +2764,37 @@ body {
   .footer__copyright-text {
     font: normal 200 13px/2 "Muli", "Arial", sans-serif;
   }
+}
+
+/* line 1, source/blocks/scroll/scroll.scss */
+.scroll {
+  position: fixed;
+  z-index: 2000;
+  right: 15vw;
+  bottom: 5vh;
+  display: none;
+  width: 70px;
+  height: 60px;
+  border: none;
+  background: center/25px 25px no-repeat url("data:image/svg+xml;base64,  PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIiBmaWxsPSIjMmIyZDVjIj48cGF0aCBkPSJNMTc3IDI1NS43bDEzNiAxMzZjOS40IDkuNCA5LjQgMjQuNiAwIDMzLjlsLTIyLjYgMjIuNmMtOS40IDkuNC0yNC42IDkuNC0zMy45IDBMMTYwIDM1MS45bC05Ni40IDk2LjRjLTkuNCA5LjQtMjQuNiA5LjQtMzMuOSAwTDcgNDI1LjdjLTkuNC05LjQtOS40LTI0LjYgMC0zMy45bDEzNi0xMzZjOS40LTkuNSAyNC42LTkuNSAzNC0uMXptLTM0LTE5Mkw3IDE5OS43Yy05LjQgOS40LTkuNCAyNC42IDAgMzMuOWwyMi42IDIyLjZjOS40IDkuNCAyNC42IDkuNCAzMy45IDBsOTYuNC05Ni40IDk2LjQgOTYuNGM5LjQgOS40IDI0LjYgOS40IDMzLjkgMGwyMi42LTIyLjZjOS40LTkuNCA5LjQtMjQuNiAwLTMzLjlsLTEzNi0xMzZjLTkuMi05LjQtMjQuNC05LjQtMzMuOCAweiIvPjwvc3ZnPg=="), #b6b6c7;
+}
+
+/* line 4, source/sass/mixins.scss */
+.scroll:hover {
+  opacity: 0.7;
+}
+
+/* line 8, source/sass/mixins.scss */
+.scroll:active {
+  opacity: 0.3;
+}
+
+/* line 18, source/blocks/scroll/scroll.scss */
+.scroll--visible {
+  display: block;
+}
+
+/* line 22, source/blocks/scroll/scroll.scss */
+.scroll--stable {
+  position: absolute;
 }

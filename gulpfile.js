@@ -114,7 +114,8 @@ function createBuildJs() {
       'source/js/introScroll.js',
       'source/js/renderMsg.js',
       'source/js/toggle.js',
-      'source/js/contact.js'
+      'source/js/contact.js',
+      'source/js/scroll.js'
     ])
     .pipe(sourcemap.init())
     .pipe(concat('script.min.js'))
