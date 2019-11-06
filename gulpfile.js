@@ -108,7 +108,6 @@ function createBuildJs() {
   return src([
       'source/js/polyfill.js',
       'source/js/picturefill.min.js',
-      'source/js/pixelglass.min.js',
       'source/js/utils.js',
       'source/js/backend.js',
       'source/js/introScroll.js',
