@@ -21,3 +21,8 @@
 .social-list__icon {
   fill: $white;
 }
+
+.social-list--slim .social-list__item {
+  margin-right: 0;
+  margin-bottom: 0;
+}
